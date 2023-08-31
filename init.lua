@@ -178,7 +178,7 @@ getgenv().saveinstance = function(saving)
         write("</Item>")
     end
     writefile(("game_%s.rbxlx"):format(game.PlaceId),table.concat(temp," ").."</roblox>")
-    print(("Done! Took %ss"):format(math.round((tick()-timer)*100)/100)) 
+    print(("Saveinstance Done! Took %ss"):format(math.round((tick()-timer)*100)/100)) 
     print("Credit To mihai_ff")
 end
 
