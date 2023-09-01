@@ -183,11 +183,11 @@ getgenv().saveinstance = function(saving)
 end
 
 getgenv().identifyexecutor = function()
-    return "KAPI UWP"
+    return "Ghost X"
 end
 
 getgenv().getexecutorname = function()
-    return "KAPI UWP"
+    return "Ghost X"
 end
 
 getgenv().getscriptclosure = function(targetScript)
