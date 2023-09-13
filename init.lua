@@ -178,7 +178,7 @@ getgenv().saveinstance = function(saving)
         write("</Item>")
     end
     writefile(("game_%s.rbxlx"):format(game.PlaceId),table.concat(temp," ").."</roblox>")
-    print(("Saveinstance Done! Took %ss"):format(math.round((tick()-timer)*100)/100)) 
+    print(("saveinstance Done! Took %ss"):format(math.round((tick()-timer)*100)/100)) 
     print("Credit To mihai_ff")
 end
 
@@ -190,27 +190,15 @@ getgenv().getexecutorname = function()
     return "Ghost X"
 end
 
-getgenv().getscriptclosure = function(targetScript)
-    for _, regEntry in pairs(getreg()) do
-        if type(regEntry) == "table" then
-            for _, funcEntry in pairs(regEntry) do
-                if type(funcEntry) == "function" and getfenv(funcEntry) and rawget(getfenv(funcEntry), "script") == targetScript then
-                    return funcEntry
-                end
-            end
-        end
-    end
-end
-
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 OrionLib:MakeNotification({
 	Name = "Injection Success",
-	Content = "Thanks for using Ghost X\n\nJoin Our Discord: https://discord.gg/dqxEf86uVZ",
+	Content = "Thanks for using Ghost X API\n\nJoin Our Discord: discord.gg/dqxEf86uVZ",
 	Image = "rbxassetid://4483362748",
 	Time = 5
 })
 
---setclipboard("https://discord.gg/dqxEf86uVZ")
+--setclipboard("https://discord.gg/bwYwNrKpwJ")
 
 --Compatibility
 
