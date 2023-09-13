@@ -193,7 +193,7 @@ end
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 OrionLib:MakeNotification({
 	Name = "Injection Success",
-	Content = "Thanks for using Ghost X API\n\nJoin Our Discord: discord.gg/dqxEf86uVZ",
+	Content = "Thanks for using Ghost X\n\nJoin Our Discord: discord.gg/dqxEf86uVZ",
 	Image = "rbxassetid://4483362748",
 	Time = 5
 })
